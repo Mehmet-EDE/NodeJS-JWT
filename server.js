@@ -1,6 +1,7 @@
 const express=require('express')
 const bodyParser=require('body-parser')
 const app=express()
+app.disable('x-powered-by');
 
 app.use(bodyParser.json({limit:'100mb'}))
 const config=require('./config')
